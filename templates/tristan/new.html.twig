@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Tristan{% endblock %}
+
+{% block body %}
+    <h1>Create new Tristan</h1>
+
+    {{ include('tristan/_form.html.twig') }}
+
+    <a href="{{ path('app_tristan_index') }}">back to list</a>
+{% endblock %}

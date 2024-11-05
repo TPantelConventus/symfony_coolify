@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Tristan{% endblock %}
+
+{% block body %}
+    <h1>Edit Tristan</h1>
+
+    {{ include('tristan/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_tristan_index') }}">back to list</a>
+
+    {{ include('tristan/_delete_form.html.twig') }}
+{% endblock %}
