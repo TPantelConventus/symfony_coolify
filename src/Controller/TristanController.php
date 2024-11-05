@@ -17,6 +17,7 @@ final class TristanController extends AbstractController
     #[Route(name: 'app_tristan_index', methods: ['GET'])]
     public function index(TristanRepository $tristanRepository): Response
     {
+        $test = 'test';
         return $this->render('tristan/index.html.twig', [
             'tristans' => $tristanRepository->findAll(),
         ]);
