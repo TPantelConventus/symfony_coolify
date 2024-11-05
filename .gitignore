@@ -9,6 +9,7 @@
 /vendor/
 ###< symfony/framework-bundle ###
 .idea
+config/secrets/dev/dev.decrypt.private.php
 
 ###> phpunit/phpunit ###
 /phpunit.xml
