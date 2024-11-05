@@ -3,9 +3,12 @@
 {% block title %}New Tristan{% endblock %}
 
 {% block body %}
-    <h1>Create new Tristan</h1>
+    <div class="card">
+        <h1>Create new Tristan</h1>
 
-    {{ include('tristan/_form.html.twig') }}
+        {{ include('tristan/_form.html.twig') }}
 
-    <a href="{{ path('app_tristan_index') }}">back to list</a>
+        <a href="{{ path('app_tristan_index') }}">back to list</a>
+    </div>
+
 {% endblock %}
